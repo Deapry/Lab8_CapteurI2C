@@ -27,5 +27,9 @@
 
 int interfaceVL6180x_litUneDistance(float *Distance);
 int interfaceVL6810x_initialise(void);
+int interfaceVL6180x_ecrit(uint16_t Registre, uint8_t Donnee);
+int interfaceVL6180x_lit(uint16_t Registre, uint8_t *Donnee);
+
+
 
 #endif

@@ -1,6 +1,6 @@
-#include "main.h"
-#include "piloteI2C1.h"
-#include "interfaceVL6180x.h"
+#include <main.h>
+#include <piloteI2C1.h>
+#include <interfaceVL6180x.h>
 
 //pour des détails: https://www.st.com/resource/en/design_tip/dt0037-vl6180x-range-and-ambient-light-sensor-quick-setup-guide-stmicroelectronics.pdf
 
@@ -12,6 +12,8 @@ typedef struct
 	uint8_t valeur;
 } INTERFACEVL6810X_MESSAGE;
 
+
+#define I2C_FICHIER "/dev/i2c-1" // fichier Linux representant le BUS #1
 #define INTERFACEVL6180X_ADRESSE 0x29 
 #define INTERFACEVL6180X_NOMBRE	40
 

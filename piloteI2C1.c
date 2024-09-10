@@ -1,7 +1,7 @@
-#include "main.h"
+#include <main.h>
 #include <linux/i2c-dev.h> //for IOCTL defs
 
-#include "piloteI2C1.h"
+#include <piloteI2C1.h>
 #define PILOTEI2C1_FICHIER "/dev/i2c-1" 
 
 //variables privées
